@@ -1,0 +1,49 @@
+/* Navigation.module.css */
+
+.navigation {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background-color: #252b46;
+  justify-content: space-between;
+}
+
+/* Logo styles */
+.navigation .logo img {
+  width: 110px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures image scales correctly */
+}
+
+/* Nav list styles */
+.navigation ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link styles */
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 12px; /* Better click area */
+}
+
+/* Hover/focus effects */
+.navigation ul li a:hover,
+.navigation ul li a:focus {
+  opacity: 0.8;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Active link (optional) */
+.navigation ul li a.active {
+  border-bottom: 2px solid white;
+}
